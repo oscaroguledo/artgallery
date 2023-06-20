@@ -298,260 +298,65 @@
     <section id="categories" class="categories">
       <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <h5 class="fw-bold">Nfts</h5>
-            <div class="count-box p-0 portfolio">
-              <div class="swiper categorySwiper gy-4  portfolio-container">
-                <div class="swiper-wrapper category-swiper-wrapper portfolio-item">
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-fluid" alt="nature-1">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
+          {% for at in art %}
+              {% if at.type == "nfts" %}
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="fw-bold">Nfts</h5>
+                  <div class="count-box p-0 portfolio">
+                    <div class="swiper categorySwiper gy-4  portfolio-container">
+                      <div class="swiper-wrapper category-swiper-wrapper portfolio-item">
+                        {% for nft in nfts %}
+                        <div class="swiper-slide category-swiper-slide">
+                          <div class="portfolio-wrap">
+                            <img src="{{nft.image.url}}" class="img-fluid" alt={{nft.name}}>
+                            <div class="portfolio-info">
+                              <h4>{{paint.name}}</h4>
+                              <p>{{paint.art_by}}</p>
+                              <div class="portfolio-links">
+                                <a href="{{nft.image.url}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-fluid" alt="nature-2">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-fluid" alt="nature-3">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-fluid" alt="nature-4">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="img-fluid" alt="nature-5">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="img-fluid" alt="nature-6">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="img-fluid" alt="nature-7">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="img-fluid" alt="nature-8">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-fluid" alt="nature-8">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
+                        {% endfor %}
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              {% endif %}
 
-          <div class="col-lg-3 col-md-6">
-            <h5 class="fw-bold">Paintings</h5>
-            <div class="count-box p-0 portfolio">
-              <div class="swiper categorySwiper gy-4  portfolio-container">
-                <div class="swiper-wrapper category-swiper-wrapper portfolio-item">
-                  <div class="swiper-slide category-swiper-slide" >
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-fluid" alt="nature-1">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
+              {% if at.type == "painting" %}
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="fw-bold">Paintings</h5>
+                  <div class="count-box p-0 portfolio">
+                    <div class="swiper categorySwiper gy-4  portfolio-container">
+                      <div class="swiper-wrapper category-swiper-wrapper portfolio-item">
+                        {% for paint in painting %}
+                        <div class="swiper-slide category-swiper-slide">
+                          <div class="portfolio-wrap">
+                            <img src="{{paint.image.url}}" class="img-fluid" alt={{paint.name}}>
+                            <div class="portfolio-info">
+                              <h4>{{paint.name}}</h4>
+                              <p>{{paint.art_by}}</p>
+                              <div class="portfolio-links">
+                                <a href="{{paint.image.url}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-fluid" alt="nature-2">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-fluid" alt="nature-3">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-fluid" alt="nature-4">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="img-fluid" alt="nature-5">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="img-fluid" alt="nature-6">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="img-fluid" alt="nature-7">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="img-fluid" alt="nature-8">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide category-swiper-slide">
-                    <div class="portfolio-wrap">
-                      <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-fluid" alt="nature-8">
-                      <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <div class="portfolio-links">
-                          <a href="https://swiperjs.com/demos/images/nature-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus m-3"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-link  m-3"></i></a>
-                        </div>
+                        {% endfor%}
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              {% endif %}
+          {% endfor %}
+
+          
+
+          
 
           <div class="col-lg-3 col-md-6">
             <h5 class="fw-bold">Photography</h5>
@@ -1079,6 +884,21 @@
       </div>
 
     </section><!-- End categories Section -->
+    <div class="pagination-container">
+        Showing page {{  page_obj.number  }} of {{  page_obj.paginator.num_pages }}
+        <ul class="pagination align-right float-right mr-auto">
+        {% if page_obj.has_previous %}
+            <li {% if page_obj.number == 1 %} class="page-item active" {% endif %}>
+                <a class="page-link" href="?page=1">&laquo;1</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">{{page_obj.paginator.num_pages}}&raquo;</a></li>
+        {% endif %}
+        </ul>
+    </div>
 
   </main><!-- End #main -->
 {% endblock content %}

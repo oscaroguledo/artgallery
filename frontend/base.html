@@ -44,7 +44,7 @@
           <ul>
             <li><a class="nav-link scrollto active" href="{% url 'home' %}">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="{% url 'view-gallery' %}">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'view-gallery' 'all' %}">Gallery</a></li>
             <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -84,8 +84,9 @@
         {% block sidebar %}
       
         {% endblock sidebar %}
-        <form class="search-form d-flex align-items-center ms-1 me-1" method="POST" action="#">
-          <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <form class="search-form d-flex align-items-center ms-1 me-1" method="post" action="{% url 'search_gallery' %}">
+          {% csrf_token %}
+          <input id="searchText" type="text" name="q" placeholder="Search" title="Enter search keyword">
           <button type="submit" title="Search"><i class="bi bi-search"></i></button>
         </form>
         <button class="btn"><i class="bi bi-filter-right filter-icon m-0"></i></button>
